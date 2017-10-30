@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+
+
+/*ボックス全体*/
+.accbox {
+    margin: 2em 0;
+    padding: 0;
+    max-width: 400px;/*最大幅*/
+}
+
+/*ラベル*/
+.accbox label {
+    display: block;
+    margin: 1.5px 0;
+    padding : 11px 12px;
+    color :#2f8fcf;
+    font-weight: bold;
+    background :#a4cbf3;
+    cursor :pointer;
+    transition: all 0.5s;
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+    background :#85baef;
+}
+
+/*チェックは隠す*/
+.accbox input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + .accshow {
+    height: auto;
+    padding: 5px;
+    background: #eaeaea;
+    opacity: 1;
+}
+</style>
+
+</head>
+<body>
+
+  <div>
+    <h1>サーブレット入門</h1>
+    <p>サンプル集</p>
+  </div>
+
+<div class="accbox">
+  <!--ラベル1-->
+    <label for="label1">テーブルサンプル</label>
+    <input type="checkbox" id="label1" class="cssacc" />
+    <div class="accshow">
+      <!--ここに隠す中身-->
+      <p>
+		<a href="http://localhost:8080/SampleServlet/tableSample.jsp">テーブルサンプル</a>
+      </p>
+    </div>
+    <!--//ラベル1-->
+  <!--ラベル2-->
+    <label for="label2">クリックして表示2</label>
+    <input type="checkbox" id="label2" class="cssacc" />
+    <div class="accshow">
+      <!--ここに隠す中身-->
+      <p>
+        こんにちは2
+      </p>
+    </div>
+    <!--//ラベル2-->
+  <!--ラベル3-->
+    <label for="label3">クリックして表示3</label>
+    <input type="checkbox" id="label3" class="cssacc" />
+    <div class="accshow">
+      <!--ここに隠す中身-->
+      <p>
+        こんにちは3
+      </p>
+    </div>
+    <!--//ラベル3-->
+  <!--ラベル4-->
+    <label for="label4">クリックして表示4</label>
+    <input type="checkbox" id="label4" class="cssacc" />
+    <div class="accshow">
+      <!--ここに隠す中身-->
+      <p>
+        こんにちは4
+      </p>
+    </div>
+    <!--//ラベル4-->
+</div><!--//.accbox-->
+
+
+
+</body>
+</html>
