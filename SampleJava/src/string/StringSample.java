@@ -8,7 +8,7 @@ public class StringSample {
 
 		String st02 = "abc";
 
-		String st03 = "ab";
+		String st03 = "abaaa";
 
 		String st04 = st03 + "c";
 
