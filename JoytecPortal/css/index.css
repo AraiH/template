@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.title {
+	background: #ffffff;
+	width: 400px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #cccccc;
+	margin: 30px auto;
+}
+
+/*ボックス全体*/
+.accbox {
+	margin: 30px auto;
+	padding: 0;
+	max-width: 500px; /*最大幅*/
+}
+
+/*ラベル*/
+.accbox label {
+	display: block;
+	margin: 1.5px 0;
+	padding: 11px 12px;
+	color: #2f8fcf;
+	font-weight: bold;
+	background: #e0ffff;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+/*ラベルホバー時*/
+.accbox label:hover {
+	background: #85baef;
+}
+
+/*チェックは隠す*/
+.accbox input {
+	display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked+.accshow {
+	height: auto;
+	padding: 5px;
+	background: #F5F6CE;
+	opacity: 1;
+}
