@@ -1,0 +1,46 @@
+https://git-scm.com/book/ja/v1/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E6%9C%80%E5%88%9D%E3%81%AEGit%E3%81%AE%E6%A7%8B%E6%88%90
+
+
+https://qiita.com/nnahito/items/565f8755e70c51532459
+
+email：arai@joy-tec.com
+name:AraiH
+pass:7fox7fox
+
+webリポジトリー
+https://github.com/AraiH/template.git
+
+
+ディレクトリー移動
+cd c:\
+
+ディレクトリー作成
+mkdir github
+
+ディレクトリー移動
+cd github
+
+ディレクトリー作成
+mkdir gittest
+
+ディレクトリー移動
+cd gittest
+
+Git初期化
+git init
+
+ファイルを作成
+echo hell Git!　てすと > test.txt
+
+データの変更点を追加
+git add test.txt
+
+ローカルにコミット
+git commit -m "GitHub Commit！"
+
+インデックス（ファイルの変更点などのリスト？）をGitHubに作成
+git remote add origin https://github.com/AraiH/test.git
+
+コミットされたデータをGitHubに送信（プッシュ）
+
+git config --list
